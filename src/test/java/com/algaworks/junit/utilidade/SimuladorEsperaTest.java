@@ -13,6 +13,6 @@ class SimuladorEsperaTest {
     void deveEperarENaoDarTimeout () {
 //        Assertions.assertTimeout(Duration.ofSeconds(10), () -> SimuladorEspera.esperar(Duration.ofSeconds(10)));
 //        Assertions.assertTimeout(Duration.ofSeconds(10), () -> SimuladorEspera.esperar(Duration.ofMillis(10)));
-        Assertions.assertTimeoutPreemptively(Duration.ofSeconds(1), () -> SimuladorEspera.esperar(Duration.ofMillis(10)));
+        Assertions.assertTimeoutPreemptively(Duration.ofSeconds(1), () -> SimuladorEspera.esperar(Duration.ofMillis( 10)));
     }
 }
